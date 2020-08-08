@@ -36,6 +36,7 @@ So by combining the first stage and second stage we build a complete two stage c
 # Results
 
 ### Training Data 
+<br>
 <table border = 2px solid black >
 <tr>
 <td></td>
@@ -75,6 +76,7 @@ So by combining the first stage and second stage we build a complete two stage c
 </table>
 
 ### Testing Data
+<br>
 <table border = 2px solid black>
 <tr>
 <td></td>
