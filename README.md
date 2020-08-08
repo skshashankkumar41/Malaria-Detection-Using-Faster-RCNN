@@ -32,4 +32,4 @@ For all the NON RBC cells create a CNN Classifier to classify given a NON RBC ce
 #### Two Stage Classification
 So by combining the first stage and second stage we build a complete two stage classification model in which we will supply a blood sample image, Faster RCNN detector will detect and gives bouding boxes of RBC and NON-RBC in the image and then for all the NON-RBC we will crop the NON-RBC and pass that cell image to our VGG-16 classifier and it will predict the categories of NON-RBC.
 
-<img src="https://i.ibb.co/gZSy529/git-graph.jpg" alt="git-graph" border="0">
+<center><img src="https://i.ibb.co/gZSy529/git-graph.jpg" alt="git-graph" border="0"></center>
