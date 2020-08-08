@@ -1,4 +1,3 @@
-
 # Malaria Detection using Faster-RCNN and Transfer Learning
 
 Given images of blood samples predict whether patient has malaria or not using Tensorflow Object Detection API and Transfer Learing 
@@ -33,10 +32,4 @@ For all the NON RBC cells create a CNN Classifier to classify given a NON RBC ce
 #### Two Stage Classification
 So by combining the first stage and second stage we build a complete two stage classification model in which we will supply a blood sample image, Faster RCNN detector will detect and gives bouding boxes of RBC and NON-RBC in the image and then for all the NON-RBC we will crop the NON-RBC and pass that cell image to our VGG-16 classifier and it will predict the categories of NON-RBC.
 
-```mermaid
-graph LR
-A[Input Image] --> B[F-RCNN Detector]
-B -- NON-RBC --> C[VGG-16 Classifier]
-B -- RBC --> D[Output Image]
-C -- tropho, schiz, ring, leuk, gamet--> D
-```
+<img src="https://i.ibb.co/gZSy529/git-graph.jpg" alt="git-graph" border="0">
