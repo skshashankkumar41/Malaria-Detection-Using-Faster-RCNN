@@ -1,0 +1,6 @@
+/input/training_images
+/input/testing_images
+/output/cell_images
+/output/records
+/output/cell_images_testing
+/output/models/frozen_inference_graph.pb
