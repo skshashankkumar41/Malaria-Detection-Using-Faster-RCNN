@@ -75,7 +75,6 @@ So by combining the first stage and second stage we build a complete two stage c
 </tr>
 </table>
 <br>
-
 ### Testing Data
 <br>
 <table border = 2px solid black>
