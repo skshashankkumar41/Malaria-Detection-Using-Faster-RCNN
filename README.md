@@ -34,6 +34,8 @@ So by combining the first stage and second stage we build a complete two stage c
 <p align="center"><img src="https://i.ibb.co/gZSy529/git-graph.jpg" alt="mal-dist" border="0" ></p>
 
 # Results
+
+### Training Data
 <table border = 2px solid black align = center>
 <tr>
 <td></td>
@@ -72,5 +74,41 @@ So by combining the first stage and second stage we build a complete two stage c
 </tr>
 </table>
 
-
-                                                              
+### Testing Data
+<table border = 2px solid black align = center>
+<tr>
+<td></td>
+<td>Grount Truth Count</td>
+<td>Model Truth Count</td>
+</tr>
+<tr>
+<td>red blood cell</td>
+<td>5614</td>
+<td>4551</td>
+</tr>
+<tr>
+<td>trophozoite</td>
+<td>111</td>
+<td>146</td>
+</tr>
+<tr>
+<td>ring</td>
+<td>169</td>
+<td>95</td>
+</tr>
+<tr>
+<td>schizont</td>
+<td>11</td>
+<td>6</td>
+</tr>
+<tr>
+<td>gametocyte</td>
+<td>12</td>
+<td>7</td>
+</tr>
+<tr>
+<td>leukocyte</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
