@@ -35,8 +35,8 @@ So by combining the first stage and second stage we build a complete two stage c
 
 # Results
 
-### Training Data
-<table border = 2px solid black align = center>
+### Training Data 
+<table border = 2px solid black >
 <tr>
 <td></td>
 <td>Grount Truth Count</td>
@@ -75,7 +75,7 @@ So by combining the first stage and second stage we build a complete two stage c
 </table>
 
 ### Testing Data
-<table border = 2px solid black align = center>
+<table border = 2px solid black>
 <tr>
 <td></td>
 <td>Grount Truth Count</td>
