@@ -93,7 +93,7 @@ def inference(image_paths):
                             pred = lr_model.predict(data)
                             label = classes[pred[0]]
                             if label != 'leukocyte':
-                                result = 'Positive'
+                                report = 'Positive'
                             cv2.rectangle(output,(startX,startY),(endX,endY),[0,0,255],3)
                             y=startY-10 if startY-10>10 else startY+10 
                             cv2.putText(output,label,(startX,y),cv2.FONT_HERSHEY_SIMPLEX,0.7,[0,0,255],2)
@@ -117,7 +117,7 @@ def inference(image_paths):
             cv2.waitKey(0)
             cv2.destroyAllWindows()
 
-    return result
+    return report
 
 
 print(inference(["input/training_images/0ca25c88-457f-4f03-bbc1-98fb6663f1d1.png"]))

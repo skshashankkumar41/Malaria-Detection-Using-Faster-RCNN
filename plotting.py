@@ -30,22 +30,22 @@ def plotAll(imagePath,annotatedPath):
         # assign different color to different classes of objects
         if row.label == 'red blood cell':
             edgecolor = 'r'
-            ax.annotate('RBC', xy=(x_max-40,y_min+20),fontsize = 9.0,color = 'r',fontfamily = 'fantasy')
+            ax.annotate('RBC', xy=(x_max-40,y_min-10),fontsize = 9.0,color = 'r',fontfamily = 'fantasy')
         elif row.label == 'trophozoite':
             edgecolor = 'b'
-            ax.annotate('trophozoite', xy=(x_max-40,y_min+20),fontsize = 12.0,color = 'b',fontfamily = 'fantasy')
+            ax.annotate('trophozoite', xy=(x_max-40,y_min-10),fontsize = 12.0,color = 'b',fontfamily = 'fantasy')
         elif row.label == 'schizont':
             edgecolor = 'y'
-            ax.annotate('v', xy=(x_max-40,y_min+20),fontsize = 12.0,color = 'y',fontfamily = 'fantasy')
+            ax.annotate('v', xy=(x_max-40,y_min-10),fontsize = 12.0,color = 'y',fontfamily = 'fantasy')
         elif row.label == 'ring':
             edgecolor = 'g'
-            ax.annotate('ring', xy=(x_max-40,y_min+20),fontsize = 12.0,color = 'g',fontfamily = 'fantasy')
+            ax.annotate('ring', xy=(x_max-40,y_min-10),fontsize = 12.0,color = 'g',fontfamily = 'fantasy')
         elif row.label == 'gametocyte':
             edgecolor = 'c'
-            ax.annotate('gametocyte', xy=(x_max-40,y_min+20),fontsize = 12.0,color = 'c',fontfamily = 'fantasy')
+            ax.annotate('gametocyte', xy=(x_max-40,y_min-10),fontsize = 12.0,color = 'c',fontfamily = 'fantasy')
         elif row.label == 'leukocyte':
             edgecolor = 'm'
-            ax.annotate('leukocyte', xy=(x_max-40,y_min+20),fontsize = 12.0,color = 'm',fontfamily = 'fantasy')
+            ax.annotate('leukocyte', xy=(x_max-40,y_min-10),fontsize = 12.0,color = 'm',fontfamily = 'fantasy')
         
         # add bounding boxes to the image
         rect = patches.Rectangle((x_min,y_min), width, height, edgecolor = edgecolor, facecolor = 'none', linewidth = 1.5)
