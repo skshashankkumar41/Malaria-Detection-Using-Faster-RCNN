@@ -21,7 +21,7 @@ It can be downloaded from [Kaggle](https://www.kaggle.com/kmader/malaria-boundin
 # Approach
 As the data is highly imbalanced and almost 98% cells are Red Blood cells, I made this problem a two stage classification task.
 
-<img src="https://i.ibb.co/xz81bQJ/mal-dist.jpg" alt="mal-dist" border="0" height = 300 width =500>
+<img src="https://i.ibb.co/5jQsL1Y/git-dist.jpg" alt="mal-dist" border="0" height = 300 width =500>
 
 #### First Stage
 Label all the cells other than RBC as Non RBC cells and then create a object detector that only detects either cell is RBC or NON RBC. For this task I used Tensorflow Object Detection API to fine-tune and train a Faster RCNN model pre-trained on coco dataset.
