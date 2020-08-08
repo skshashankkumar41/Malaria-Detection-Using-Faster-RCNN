@@ -115,28 +115,29 @@ So by combining the first stage and second stage we build a complete two stage c
 </tr>
 </table>
 
+
 #  Files
 
-<b>[preprocessing.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/preprocessing.py)</b>
+<b>[preprocessing.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/preprocessing.py)</b><br>
 As data is present in json file this file creates annotated csv files which will be required by our Tensorflow Object Detection API.
 
-<b>[TFAnnotation.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/TFAnnotation.py)</b>
+<b>[TFAnnotation.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/TFAnnotation.py)</b><br>
 This class defines the format of data required by Tensorflow Object Detection API.
 
-<b>[TFODRecordCreator.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/TFODRecordCreator.py)</b>
+<b>[TFODRecordCreator.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/TFODRecordCreator.py)</b><br>
 This script creates the .record and classes files using TFAnnotation class which is required by Tensorflow Object Detection API to train Faster RCNN model.
 
-<b>[plotting.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/plotting.py)</b>
+<b>[plotting.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/plotting.py)</b><br>
 Script for plotting of bouding boxes of RBC, NON RBC on images.
 
-<b>[CellExtractor.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/CellExtractor.py)</b>
+<b>[CellExtractor.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/CellExtractor.py)</b><br>
 Script for cropping and extracting NON-RBC images using bounding boxes from main image for the training of VGG-16 model.
 
-<b>[VGG16Trainer.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/VGG16Trainer.py)</b>
+<b>[VGG16Trainer.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/VGG16Trainer.py)</b><br>
 Script for training of cropped NON-RBC images using VGG-16 pretrained model.
 
-<b>[trainDataInference.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/trainDataInference.py), [testDataInference](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/testDataInference.py)</b>
+<b>[trainDataInference.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/trainDataInference.py), [testDataInference](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/testDataInference.py)</b><br>
 Script for evaluation of training and testing images using two-staged classification.
 
-<b>[inference.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/inference.py)</b>
+<b>[inference.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/inference.py)</b><br>
 Function to predict the result of blood sample image and also shows the image of input blood sample with labels of each cell and bouding box.
