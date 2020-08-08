@@ -74,6 +74,7 @@ So by combining the first stage and second stage we build a complete two stage c
 <td>87</td>
 </tr>
 </table>
+<br>
 
 ### Testing Data
 <br>
