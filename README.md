@@ -1,6 +1,6 @@
 # Malaria Detection using Faster-RCNN and Transfer Learning
 
-Given images of blood samples predict whether patient has malaria or not using Tensorflow Object Detection API and Transfer Learing 
+Given images of blood samples predict whether a patient has malaria or not using Tensorflow Object Detection API and Transfer Learning
 <br>
 <table>
   <tr>
