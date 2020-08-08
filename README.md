@@ -33,4 +33,44 @@ So by combining the first stage and second stage we build a complete two stage c
 
 <p align="center"><img src="https://i.ibb.co/gZSy529/git-graph.jpg" alt="mal-dist" border="0" ></p>
 
+# Results
+<table border = 2px solid black align = center>
+<tr>
+<td></td>
+<td>Grount Truth Count</td>
+<td>Model Truth Count</td>
+</tr>
+<tr>
+<td>red blood cell</td>
+<td>77420</td>
+<td>71040</td>
+</tr>
+<tr>
+<td>trophozoite</td>
+<td>1473</td>
+<td>1513</td>
+</tr>
+<tr>
+<td>ring</td>
+<td>353</td>
+<td>311</td>
+</tr>
+<tr>
+<td>schizont</td>
+<td>179</td>
+<td>178</td>
+</tr>
+<tr>
+<td>gametocyte</td>
+<td>144</td>
+<td>157</td>
+</tr>
+<tr>
+<td>leukocyte</td>
+<td>103</td>
+<td>87</td>
+</tr>
+</table>
+
+
                                                               
