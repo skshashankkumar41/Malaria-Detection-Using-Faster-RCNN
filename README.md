@@ -80,7 +80,7 @@ So by combining the first stage and second stage we build a complete two stage c
 </table>
 
 ## Testing Data
-### MAP Score
+### MAP Scores
 <img src="https://i.ibb.co/dm1nTTw/test-map.jpg" alt="test-map" border="0">
 
 ### Counts
