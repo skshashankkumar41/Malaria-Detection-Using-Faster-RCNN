@@ -8,6 +8,18 @@ from TFAnnotation import TFAnnotation
 if not os.path.exists('output/records'):
     os.makedirs('output/records')
 
+if not os.path.exists('experiment'):
+    os.makedirs('experiment')
+
+if not os.path.exists('experiment/evaluation'):
+    os.makedirs('experiment/evaluation')
+
+if not os.path.exists('experiment/evaluation'):
+    os.makedirs('experiment/exported_model')
+
+if not os.path.exists('experiment/evaluation'):
+    os.makedirs('experiment/training')
+
 BASE_PATH = "G:/AIP/Malaria-Detection"
 TRAIN_ANNOT_PATH = os.path.sep.join([BASE_PATH,"annotated_data/train_annotation.csv"])#train csv path
 TEST_ANNOT_PATH = os.path.sep.join([BASE_PATH,"annotated_data/test_annotation.csv"])#test csv path

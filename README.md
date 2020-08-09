@@ -116,6 +116,44 @@ So by combining the first stage and second stage we build a complete two stage c
 </table>
 
 
+# Usage
+Clone the repository and run the following commands from the terminal.
+
+#### Setup Tensorflow Object Detection API
+Go through this [blog](https://medium.com/@marklabinski/installing-tensorflow-object-detection-api-on-windows-10-7a4eb83e1e7b) to setup TFOD on your system.
+
+#### Install project dependencies from requirements.txt
+```
+ pip install -r requirements.txt
+```
+#### Creating .records and classes files
+```
+ python TFODRecordCreator.py
+```
+#### Training Faster RCNN 
+In the experiment folder paste the Faster RCNN resnet101 [coco model](https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/index.md) in training subfolder and then run the following command from TFOD folder
+```
+python object_detection/model_main.py --pipeline_config_path faster_rcnn_malaria.config --model_dir experiment/training --num_train_steps 20000 --sample_1_of_n_eval_examples 10 --alsologtostderr
+```
+
+#### Export Faster RCNN Model
+Run the following command from TFOD folder
+```
+python object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path faster_rcnn_malaria.config --trained_checkpoint_prefix experiments/training/model.ckpt-20000 --output_directory output/models
+```
+#### Crop and Extract NON-RBC Images
+```
+ python CellExtractor.py  
+```
+#### Train VGG-16 on Extracted NON-RBC Images
+```
+python VGG16Trainer.py
+```
+## Inference 
+```
+python inference.py --imagePath "test.png"
+```
+
 #  Files
 
 <b>[preprocessing.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/preprocessing.py)</b><br>
@@ -141,3 +179,9 @@ Script for evaluation of training and testing images using two-staged classifica
 
 <b>[inference.py](https://github.com/skshashankkumar41/Malaria-Detection-Using-Faster-RCNN/blob/master/inference.py)</b><br>
 Function to predict the result of blood sample image and also shows the image of input blood sample with labels of each cell and bouding box.
+
+
+# Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+

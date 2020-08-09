@@ -17,6 +17,11 @@ import imutils
 import cv2
 from PIL import Image
 import PIL.Image
+import argparse
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-w", "--imagePath", required = True, help="Path of Blood Sample Image")
+args = vars(ap.parse_args())
 
 model="output/models/frozen_inference_graph.pb" #saved Faster-RCNN model graph
 labels_loc="output/records/classes.pbtxt" #saved classes files
@@ -119,5 +124,6 @@ def inference(image_paths):
 
     return report
 
+print(inference([args['imagePath']]))
 
-print(inference(["input/training_images/0ca25c88-457f-4f03-bbc1-98fb6663f1d1.png"]))
+#print(inference(["input/training_images/0ca25c88-457f-4f03-bbc1-98fb6663f1d1.png"]))
