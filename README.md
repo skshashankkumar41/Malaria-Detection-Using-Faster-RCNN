@@ -36,6 +36,10 @@ So by combining the first stage and second stage we build a complete two stage c
 # Results
 
 ### Training Data 
+## MAP Scores
+<img src="https://i.ibb.co/VgVwJTv/train-map-graph.png" alt="train-map-graph" border="0">
+
+## Counts
 <br>
 <table border = 2px solid black >
 <tr>
@@ -76,6 +80,10 @@ So by combining the first stage and second stage we build a complete two stage c
 </table>
 
 ### Testing Data
+## MAP Score
+<img src="https://i.ibb.co/MsHDxWR/testing-map-plots.png" alt="testing-map-plots" border="0">
+
+## Counts
 <br>
 <table border = 2px solid black>
 <tr>
